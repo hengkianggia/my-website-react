@@ -43,8 +43,16 @@ export const Content2 = () => {
             </p>
           </aside>
           <aside className="w-7/12 h-full flex justify-between">
-            <div className="w-[49%] h-full flex-col overflow-hidden">{listGambar}</div>
-            <div className="w-[49%] h-full flex-col overflow-hidden">{listGambar}</div>
+            <div className="w-[49%] h-full flex-col overflow-hidden">
+              {dataGambar.map((data) => {
+                return <Gambar key={data.id} img={data.img} desc={data.desc} />;
+              })}
+            </div>
+            <div className="w-[49%] h-full flex-col overflow-hidden">
+              {dataGambar.map((data) => {
+                return <Gambar key={data.id} img={data.img} desc={data.desc} />;
+              })}
+            </div>
           </aside>
         </div>
       </div>

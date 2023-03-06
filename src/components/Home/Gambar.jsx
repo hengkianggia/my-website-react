@@ -1,8 +1,9 @@
 import React from "react";
 
+const kelass = "w-full h-[450px] flex mb-7 relative items-center";
 export const Gambar = (props) => {
   return (
-    <div className="w-full h-[450px] flex mb-7 relative items-center">
+    <div className={kelass}>
       <img
         src={props.img}
         alt=""
