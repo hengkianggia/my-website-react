@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: "Fabulous";   /*Can be any text*/
+  src: local("NT Fabulous"),
+    url("../src/font/NT\ Fabulous\ .otf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Runs";   /*Can be any text*/
+  src: local("TT Runs Trial Regular"),
+    url("../src/font/TT\ Runs\ Trial\ Regular.ttf") format("truetype");
+}
+
+ /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* membuat background dari scrollbar */
+    /* kasih warna transparan agar lebih estetik  */
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+  
+    /* membuat styling pada batang atau bar scrollbar  */
+    /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+    ::-webkit-scrollbar-thumb {
+      background-color: #d6dee1;
+      border-radius: 20px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;}
+
+body {
+  background-color: #0B0B0D;
 }
