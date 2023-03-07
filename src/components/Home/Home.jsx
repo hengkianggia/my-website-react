@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Navbar } from "../Navbar";
+import { About } from "./About";
 import { Content1 } from "./Content1";
 import { Content2 } from "./Content2";
 import { Content3 } from "./Content3";
@@ -17,6 +18,7 @@ export const Home = () => {
       <Content3/>
       <Content4/>
       <Portofolio/>
+      <About/>
     </Fragment>
   );
 };

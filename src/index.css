@@ -18,7 +18,7 @@
 
  /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 3px;
     }
 
     /* membuat background dari scrollbar */
@@ -31,9 +31,9 @@
     /* membuat styling pada batang atau bar scrollbar  */
     /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
     ::-webkit-scrollbar-thumb {
-      background-color: #d6dee1;
+      background-color: #d6dee186;
       border-radius: 20px;
-      border: 2px solid transparent;
+      border: 1px solid transparent;
       background-clip: content-box;
     }
 

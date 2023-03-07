@@ -1,5 +1,5 @@
 import React from 'react'
-
+import gambar from '../../assets/sungai.jpg'
 
 export const Content3 = () => {
   return (
@@ -24,7 +24,10 @@ export const Content3 = () => {
             </p>
           </aside>
           <aside className="w-6/12 h-full flex justify-center">
-            <div className='w-8/12 h-full bg-orange-400'>
+            <div className='w-7/12 h-full pt-14 text-center'>
+              <img src={gambar} alt="" className='w-full h-[80%] object-cover object-center rounded-xl mb-4'/>
+              <h3 className='text-md font-Fabulous'>China Lake</h3>
+              <p className='text-sm font-Runs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, cumque?</p>
             </div>
           </aside>
         </div>

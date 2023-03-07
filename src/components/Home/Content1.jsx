@@ -6,16 +6,16 @@ export const Content1 = () => {
   const ref = useRef(null);
   const reff = useRef(null);
   const refff = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const isInVieww = useInView(reff, { once: true });
-  const isInViewww = useInView(refff, { once: true });
+  const isInView = useInView(ref, {once: true});
+  const isInVieww = useInView(reff, {once: true});
+  const isInViewww = useInView(refff, {once: true});
 
   return (
     <section className="flex bg-primary flex-col items-center w-full py-32">
       <p
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateX(-200px)",
+          transform: isInView ? "none" : "translatey(100px)",
           opacity: isInView ? 1 : 0,
           transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
@@ -42,7 +42,7 @@ export const Content1 = () => {
       <p
         ref={refff}
         style={{
-          transform: isInViewww ? "none" : "translateX(-200px)",
+          transform: isInViewww ? "none" : "translateX(200px)",
           opacity: isInViewww ? 1 : 0,
           transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
